@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Stored Products</title></head>
+<body>
+    <h2>Warehouse Storage</h2>
+    <table border="1">
+        <tr><th>Product</th><th>Category</th><th>Allocated Rack</th></tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.category }}</td>
+            <td>{{ product.allocated_rack }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
